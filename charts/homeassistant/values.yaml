@@ -36,7 +36,10 @@ podSecurityContext:
 securityContext:
   capabilities:
     drop:
-    - ALL
+      - ALL
+    add:
+      - CAP_NET_RAW
+      - CAP_NET_BIND_SERVICE
   # TODO: fix this?
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
