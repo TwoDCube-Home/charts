@@ -30,7 +30,8 @@ podAnnotations: {}
 podLabels: {}
 
 podSecurityContext:
-  fsGroup: 2000
+  # TODO: fix this?
+  # fsGroup: 2000
 
 securityContext:
   capabilities:
@@ -38,8 +39,8 @@ securityContext:
     - ALL
   # TODO: fix this?
   # readOnlyRootFilesystem: true
-  runAsNonRoot: true
-  runAsUser: 1000
+  # runAsNonRoot: true
+  # runAsUser: 1000
 
 # This is for setting up a service more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/
 service:
