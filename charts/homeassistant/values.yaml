@@ -83,7 +83,7 @@ resources: {}
 volumes:
   - name: ha-config
     configMap:
-      name: {{ include "homeassistant.fullname" . }}
+      name: homeassistant
 
 
 # Additional volumeMounts on the output Deployment definition.
