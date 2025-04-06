@@ -5,6 +5,8 @@ metadata:
   labels:
     {{- include "homeassistant.labels" . | nindent 4 }}
 spec:
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       {{- include "homeassistant.selectorLabels" . | nindent 6 }}
