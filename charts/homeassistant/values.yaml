@@ -4,7 +4,7 @@ image:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2025.3.4"
+  tag: "2025.4.1"
 
 # This is to override the chart name.
 nameOverride: ""
@@ -84,6 +84,9 @@ volumes:
   - name: ha-config
     configMap:
       name: homeassistant
+  - name: ha-storage
+    persistentVolumeClaim:
+      claimName: homeassistant
 
 
 # Additional volumeMounts on the output Deployment definition.
@@ -91,6 +94,9 @@ volumeMounts:
   - mountPath: "/config/configuration.yaml"
     name: ha-config
     subPath: "configuration.yaml"
+  - mountPath: "/config"
+    name: ha-storage
+  
 
 nodeSelector: {}
 
