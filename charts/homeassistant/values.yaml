@@ -81,10 +81,6 @@ resources: {}
 
 # Additional volumes on the output Deployment definition.
 volumes:
-  - name: ha-config
-    configMap:
-      name: homeassistant
-      defaultMode: 0777
   - name: ha-storage
     persistentVolumeClaim:
       claimName: homeassistant
@@ -92,9 +88,6 @@ volumes:
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
-  - mountPath: "/config/configuration.yaml"
-    name: ha-config
-    subPath: "configuration.yaml"
   - mountPath: "/config"
     name: ha-storage
   
