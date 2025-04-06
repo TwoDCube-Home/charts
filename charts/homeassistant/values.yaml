@@ -84,6 +84,7 @@ volumes:
   - name: ha-config
     configMap:
       name: homeassistant
+      defaultMode: 0777
   - name: ha-storage
     persistentVolumeClaim:
       claimName: homeassistant
