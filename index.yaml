@@ -3,6 +3,16 @@ entries:
   homeassistant:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-04-06T06:41:29.360480002Z"
+    description: A Helm chart for Kubernetes
+    digest: 82be31c11e75ad2cf475b5304310e8ff4eb41d0e453440cc126c642f9ac4b72e
+    name: homeassistant
+    type: application
+    urls:
+    - https://github.com/TwoDCube-Home/charts/releases/download/homeassistant-0.1.12/homeassistant-0.1.12.tgz
+    version: 0.1.12
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2025-04-06T06:30:55.905251366Z"
     description: A Helm chart for Kubernetes
     digest: 3510b9688720ed19a98f2646edac0499c8e0201ba42a0accfe6379b3378742ba
@@ -111,4 +121,4 @@ entries:
     urls:
     - https://github.com/TwoDCube-Home/charts/releases/download/homeassistant-0.1.0/homeassistant-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-06T06:30:55.905304135Z"
+generated: "2025-04-06T06:41:29.360531057Z"
